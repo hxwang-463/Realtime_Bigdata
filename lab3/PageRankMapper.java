@@ -9,7 +9,7 @@ import org.apache.hadoop.io.MapWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-Public class TextDoublePair implements Writable {
+public class TextDoublePair implements Writable {
   private Text source;
   private double probability;
 
@@ -71,4 +71,5 @@ public class PageRankMapper
         outvalue.set(new Text(arr[0]), pr);
         context.write(new Text(arr[i]), outvalue);
       }
+    }
 }

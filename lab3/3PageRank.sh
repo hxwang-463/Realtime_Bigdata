@@ -1,7 +1,7 @@
 #!/bin/bash
 echo Run Page Rank Algorithm for 3 times!
-input = $1
-output = $2
+input=$1
+output=$2
 hadoop fs -rm -r -f $output
 hadoop fs -rm -r -f "temp1"
 

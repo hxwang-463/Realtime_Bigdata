@@ -27,7 +27,9 @@ public class PageRank {
     job.setReducerClass(PageRankReducer.class);
 
     job.setOutputKeyClass(Text.class);
-    job.setOutputValueClass(TextDoublePair.class);
+    job.setOutputValueClass(NullWritable.class);
+    job.setMapOutputKeyClass(Text.class);
+    job.setMapOutputValueClass(TextDoublePair.class);
     
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }

@@ -1,7 +1,8 @@
 #!/bin/bash
 echo Run Page Rank Algorithm for 3 times!
-if [ $# != 3 ] ; then
-echo "USAGE: $0 input_file output_directory"
+if [ $# != 2 ] ; then
+echo $#
+echo "USAGE: bash 3PageRank.sh input_file output_directory"
 exit 1;
 fi
 

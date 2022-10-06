@@ -1,0 +1,6 @@
+A C J PR
+B D E J PR
+C A B PR
+D A B C E J PR
+E J PR
+J B C PR

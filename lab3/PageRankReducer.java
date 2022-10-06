@@ -14,7 +14,7 @@ public class PageRankReducer
       throws IOException, InterruptedException {
     
     double pr = 0;
-    String destinations;
+    String destinations = "";
     for (TextDoublePair val : values) {
       String source = val.getSource().toString();
       double probability = val.getPr();

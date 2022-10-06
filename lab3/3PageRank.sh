@@ -1,5 +1,10 @@
 #!/bin/bash
 echo Run Page Rank Algorithm for 3 times!
+if [ $# != 3 ] ; then
+echo "USAGE: $0 input_file output_directory"
+exit 1;
+fi
+
 input=$1
 output=$2
 hadoop fs -rm -r -f $output

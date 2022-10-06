@@ -2,6 +2,7 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.*;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
@@ -26,6 +27,6 @@ public class PageRankReducer
 
     }
     String output = key+" "+destinations+" "+String.valueOf(pr);
-    context.write(new Text(output), null);
+    context.write(new Text(output), NullWritable.get());
   } 
 }

@@ -21,9 +21,8 @@ public class PageRankReducer
       else {
         pr += probability;
       }
-
     }
-    String output = key+" "+destinations+" "+String.valueOf(pr);
+    String output = key + " " + destinations + " " + String.valueOf(pr);
     context.write(new Text(output), NullWritable.get());
   } 
 }

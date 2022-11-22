@@ -3,6 +3,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 import org.apache.hadoop.io.*;
+import java.util.regex.Pattern;
 import org.apache.hadoop.mapreduce.Mapper;
 
 

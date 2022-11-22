@@ -4,11 +4,11 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class Collosion {
+public class Collision {
 
   public static void main(String[] args) throws Exception {
     if (args.length != 2) {
-      System.err.println("Usage: Collosion <input path> <output path>");
+      System.err.println("Usage: Collision <input path> <output path>");
       System.exit(-1);
     }
     

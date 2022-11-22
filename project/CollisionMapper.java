@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 public class CollisionMapper 
   extends Mapper<LongWritable, Text, Text, threeint> {
 
-    private boolean check_data(date, zip, injured, killed){
+    private boolean check_data(String date, String zip, String injured, String killed){
       if(!Pattern.matches("\\d{2}/\\d{2}/\\d{4}", date)) return false;
       if(!Pattern.matches("\\d{5}", zip)) return false;
       if(!Pattern.matches("\\d+", injured)) return false;

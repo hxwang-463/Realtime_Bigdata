@@ -28,7 +28,7 @@ public class CollisionMapper
       String injured = arr[11];
       String killed = arr[12];
       if(check_data(crash_date,zip,injured,killed)) {
-        context.write(new Text(crash_date+"-"+zip), new threeint(1, Integer.parseInt(killed), Integer.parseInt(injured));
+        context.write(new Text(crash_date+"-"+zip), new threeint(1, Integer.parseInt(killed), Integer.parseInt(injured)));
       }
     }
 }

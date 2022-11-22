@@ -29,14 +29,14 @@ public class threeint implements Writable {
     }
     @Override
     public void write(DataOutput out) throws IOException {
-        out.writeInteger(count);
-        out.writeInteger(death);
-        out.writeInteger(injured);
+        out.writeInt(count);
+        out.writeInt(death);
+        out.writeInt(injured);
     }
     @Override
     public void readFields(DataInput in) throws IOException {
-        count = in.readInteger();
-        death = in.readInteger();
-        injured = in.readInteger();
+        count = in.readInt();
+        death = in.readInt();
+        injured = in.readInt();
     }
 }

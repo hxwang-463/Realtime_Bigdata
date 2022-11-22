@@ -42,4 +42,8 @@ public class threeint implements Writable {
         death = in.readInt();
         injured = in.readInt();
     }
+    @Override
+    public String toString() {
+      return count + "\t" + death + "\t" + injured;
+    }
 }

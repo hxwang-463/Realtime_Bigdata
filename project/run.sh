@@ -7,5 +7,5 @@ fi
 hadoop fs -rm -r -f $2
 
 echo start
-hadoop jar Collision.jar Collision_data_ingestion $1 $2
+hadoop jar Collision.jar Collision $1 $2
 echo All done. Saved in $2

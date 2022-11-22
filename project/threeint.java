@@ -10,6 +10,9 @@ public class threeint implements Writable {
     private Integer death;
     private Integer injured;
 
+    public threeint(){
+        set(0,0,0);
+    }
     public threeint(Integer count, Integer death, Integer injured){
         set(count, death, injured);
     }

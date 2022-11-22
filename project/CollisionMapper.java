@@ -23,13 +23,14 @@ public class CollisionMapper
         throws IOException, InterruptedException {
       String line = value.toString();
       String [] arr = line.split(",");
-
-      String crash_date = arr[0];
-      String zip = arr[3];
-      String injured = arr[11];
-      String killed = arr[12];
-      if(check_data(crash_date,zip,injured,killed)) {
-        context.write(new Text(crash_date+"-"+zip), new threeint(1, Integer.parseInt(killed), Integer.parseInt(injured)));
+      if(arr.length>13){
+        String crash_date = arr[0];
+        String zip = arr[3];
+        String injured = arr[11];
+        String killed = arr[12];
+        if(check_data(crash_date,zip,injured,killed)) {
+          context.write(new Text(crash_date+"-"+zip), new threeint(1, Integer.parseInt(killed), Integer.parseInt(injured)));
+        }
       }
     }
 }
